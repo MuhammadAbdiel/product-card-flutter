@@ -60,7 +60,7 @@ class ProductCard extends StatelessWidget {
                     horizontal: 10,
                   ),
                   padding: const EdgeInsets.only(bottom: 8),
-                  height: notification != null ? 290 : 260,
+                  height: notification != null ? 310 : 260,
                   width: 130,
                   duration: const Duration(milliseconds: 300),
                   curve: Curves.easeInOut,
@@ -92,7 +92,7 @@ class ProductCard extends StatelessWidget {
                 ),
                 Container(
                   width: 150,
-                  height: 260,
+                  height: 280,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
@@ -119,7 +119,7 @@ class ProductCard extends StatelessWidget {
                                 topRight: Radius.circular(16),
                               ),
                               image: DecorationImage(
-                                image: NetworkImage(imageURL),
+                                image: AssetImage(imageURL),
                                 fit: BoxFit.cover,
                               ),
                             ),
